@@ -71,27 +71,47 @@
         </h2>
     </div>
 
-    <form>
-        <div class="mb-3 mx-4">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <select class="mb-3 mx-4">
-            <option selected>Select Query Type</option>
-            <option value="1">Web Development</option>
-            <option value="2">Coding</option>
-            <option value="3">App Development</option>
-        </select>
-        <div class="mb-3 mx-4 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Are You a Member?</label>
-        </div>
-        <div class="form-floating mx-4">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Share Your Query</label>
-        </div>
-        <button type="submit" class="btn btn-primary mx-4 my-4">Submit</button>
+        <img src="vegetables.png" width="1320" height="500" alt="this is an image">
+    <form action="">
+        <h1 style="background-color:lime"><br>Contact Us<br>Required Fields are followed by *</h1>
+        <br>
+        <br>
+
+        <p>
+            <hr>
+            First Name: * <input type="text" name="fname" id="fname" required>
+            Second Name: * <input type="text" name="sname" id="sname" required>
+            <br>
+            <hr>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Gender * </legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            Birthday * <input type="date" name="birthday" id="birthday" required>
+        </fieldset>
+
+        <fieldset>
+            <p>Email: * <input type="email" name="email" id="email" required></p>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                Address: * <textarea name="address" id="address" cols="70" rows="10" required></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            What do you want to say? <textarea name="tellusproblem" id="tellusproblem" cols="70" rows="10"></textarea>
+        </fieldset>
+        </p>
+        <input style="background-color:blue" type="submit" value="Submit">
     </form>
 
 
